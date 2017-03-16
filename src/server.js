@@ -21,8 +21,8 @@ app.get('/', async (req, res) => {
 });
  
 
-app.listen(3000);
- console.log("listening http://localhost:3000");
+app.listen(80);
+ console.log("listening http://localhost:80");
 
  function addA4StyleString() {
     var node = document.createElement('style');
@@ -52,7 +52,7 @@ const capture = async function(url) {
     // await page.on("onResourceRequested", function(requestData) {
     //    // console.info('Requesting', requestData.url)
     // });
-    var dpi = 120.0, dpcm = dpi/2.54;
+    var dpi = 150.0, dpcm = dpi/2.54;
     var widthCm = 21.0, heightCm = 29.7; // A4
  
     const status = await page.open(url);
