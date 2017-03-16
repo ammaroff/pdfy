@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:latest
 COPY . /pdfy
 WORKDIR /pdfy 
 RUN npm install
